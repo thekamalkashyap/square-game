@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { RigidBody } from "@react-three/rapier";
 
-export default ({ position, geometry, stageColor }) => {
+const JumpBlock =  ({ position, geometry, stageColor }) => {
   const barrier = useRef();
   const [timeOffset] = useState(() => Math.random() * Math.PI * 2);
   useFrame((state) => {
@@ -36,3 +36,5 @@ export default ({ position, geometry, stageColor }) => {
     </group>
   );
 };
+
+export default JumpBlock;

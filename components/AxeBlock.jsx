@@ -1,9 +1,8 @@
 import { useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { RigidBody } from "@react-three/rapier";
-import * as THREE from "three";
 
-export default ({ position, geometry, stageColor }) => {
+const AxeBlock = ({ position, geometry, stageColor }) => {
   const barrier = useRef();
   const [timeOffset] = useState(() => Math.random() * Math.PI * 2.5);
 
@@ -38,3 +37,5 @@ export default ({ position, geometry, stageColor }) => {
     </group>
   );
 };
+
+export default AxeBlock;

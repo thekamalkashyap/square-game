@@ -1,4 +1,4 @@
-export default ({ position, geometry }) => {
+const StartPoint = ({ position, geometry }) => {
   return (
     <group position={position}>
       <mesh receiveShadow geometry={geometry}>
@@ -7,3 +7,4 @@ export default ({ position, geometry }) => {
     </group>
   );
 };
+export default StartPoint;

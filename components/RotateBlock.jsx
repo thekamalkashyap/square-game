@@ -3,7 +3,7 @@ import { useFrame } from "@react-three/fiber";
 import { RigidBody } from "@react-three/rapier";
 import * as THREE from "three"
 
-export default ({ position, geometry, stageColor }) => {
+const RotateBlock =  ({ position, geometry, stageColor }) => {
   const barrier = useRef();
   const [speed] = useState(
     () => (Math.random() + 0.2) * (Math.random() < 0.5 ? -1 : 1)
@@ -37,3 +37,4 @@ export default ({ position, geometry, stageColor }) => {
     </group>
   );
 };
+export default RotateBlock;
