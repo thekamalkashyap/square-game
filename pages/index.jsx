@@ -8,13 +8,7 @@ import {
 import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import { Perf } from "r3f-perf";
 import * as THREE from "three";
-import Car from "../components/Car";
-import StartPoint from "@/components/StartPoint";
-import FinishPoint from "@/components/FinishPoint";
-import JumpBlock from "@/components/JumpBlock";
-import RotateBlock from "@/components/RotateBlock";
-import AxeBlock from "@/components/AxeBlock";
-import { Lights, Walls } from "@/components";
+import { Lights } from "@/components";
 import { useMemo } from "react";
 
 const count = 5;
